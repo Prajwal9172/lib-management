@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT ASSIGNMENT 1 AND 2</title>
+    <link rel="stylesheet" href="CSS_2.css">
+    
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/
+	jquery/3.3.1/jquery.min.js">
+	</script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/
+	popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/js/bootstrap.min.js">
+	</script>
+
+</head>
+
+<body class="body" bgcolor="#ffffcc">
+    <img class="bgimg" src="https://cdn.edu.buncee.com/rackspace/bnc-assets/backgrounds/58b/e18/1488576911_BgLibrary030317_01.jpg"/>
+
+    <div class="h1">
+        <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+    </div>
+    
+    <div >
+    <form class="form1" name="myform" onsubmit="return validate()">
+        First Name: <input type="text" id="fname" name="fname" />
+        <br><br>
+        Roll no. : <input type="number" id="roll" name="roll" />
+        <br><br>        
+        Password: <input type="password" name="password"/>
+        <br><br>
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset" value="Reset"/>
+        <a href="C:\Users\Dell\OneDrive\Desktop\HTML\WT1\WT2_2.HTML">Next </a>
+    </div>
+</form>
+
+
+
+    <script>
+        function validate()
+            {
+                var fname=document.myform.fname.value
+                var roll=document.myform.roll.value
+                var password=document.myform.password.value;
+
+                if(fname==null||fname==""){
+                    alert('Name should not be empty!');
+                    return false;
+                }
+                if(roll==null||roll==""){
+                    alert('Roll No. should not be empty!');
+                    return false;
+                }
+                if(roll.length!=6){
+                    alert('Enter 6 Digit Roll No.')
+                }
+                if(password==null||password==""){
+                    alert('Password should not be empty!');
+                    return false;
+                }
+                else if(password.length<8)
+                {
+                    alert('Password length must be greater than 8!');
+                    return false;
+                }
+            }
+    </script>
+    </body>
+
+    
+</body>
+</html>
